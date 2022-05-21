@@ -1,0 +1,6 @@
+local lplayer = game.Players.LocalPlayer
+
+game:GetService('RunService').Stepped:Connect(function()
+   pcall(function()
+       lplayer.Character.BodyEffects.Movement:ClearAllChildren()
+   end)
